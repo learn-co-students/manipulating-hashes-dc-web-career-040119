@@ -13,7 +13,17 @@ def first_challenge
     }
   }
 
-  #your code here
+  contacts.each do |contact, info|
+    info.each do |trait, list|
+      if list.kind_of?(Array)
+        list.each_with_index do |item, index|
+          if item == "strawberry"
+            list.delete_at(index)
+          end
+        end
+      end
+    end
+  end
 
 
   #remember to return your newly altered contacts hash!
