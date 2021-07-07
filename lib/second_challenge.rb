@@ -7,7 +7,7 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
-
+value_array = []
+groceries.values.each{ |item| value_array.concat(item)}
+value_array
 end
